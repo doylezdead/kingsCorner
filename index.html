@@ -1,0 +1,131 @@
+<html>
+  <head>
+    <!-- tempates -->
+    <script id="blank_card_template" type="text/x-handlebars-template">
+      <li class="card blankcard">
+        <b>Empty Pile</b>
+      </li>
+    </script>
+
+    <!-- ♠♣♥♦ -->
+    <script id="card_template" type="text/x-handlebars-template">
+      <li class="card" style="margin-left: -25px;">
+        {{ #if spades }}
+          <b><font style="font-size: 20pt; color: black;">{{value}} ♠</font></b><br>
+        {{ else if clubs }}
+          <b><font style="font-size: 20pt; color: black;">{{value}} ♣</font></b><br>
+        {{ else if hearts }}
+          <b><font style="font-size: 20pt; color: red;">{{value}} ♥</font></b><br>
+        {{ else if diamonds }}
+          <b><font style="font-size: 20pt; color: red;">{{value}} ♦</font></b><br>
+      </li>
+    </script>
+
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="style/app.css">
+
+    <!-- js -->
+    <script src="js/handlebars.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/motion.js"></script>
+
+  </head>
+  <body>
+    <div class="playingfield"><center>
+      <table>
+        <tr>
+          <td>
+            <ul id="corner1">
+              <li class="card blankcard ccw_rotate">
+                Empty
+              </li>
+              <li class="card blankcard ccw_rotate" style="margin-bottom: 18px; margin-right: 18px;">
+                Empty
+              </li>
+            </ul>
+          </td>
+          <td>
+            <ul id="pile1">
+              <li class="card blankcard">
+                Empty
+              </li>
+            </ul>
+          </td>
+          <td>
+            <ul id="corner2">
+              <li class="card blankcard cw_rotate">
+                Empty
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <ul id="pile2">
+              <li class="card blankcard cw_right">
+                Empty
+              </li>
+            </ul>
+          </td>
+          <td>
+            <ul id="deck">
+              <li class="card blankcard">
+                Empty
+              </li>
+            </ul>
+          </td>
+          <td>
+            <ul id="pile3">
+              <li class="card blankcard ccw_right">
+                Empty
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <ul id="corner3">
+              <li class="card blankcard cw_rotate">
+                Empty
+              </li>
+            </ul>
+          </td>
+          <td>
+            <ul id="pile4">
+              <li class="card blankcard">
+                Empty
+              </li>
+            </ul>
+          </td>
+          <td>
+            <ul id="corner4">
+              <li class="card blankcard ccw_rotate">
+                Empty
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </center></div>
+    <div class="handfield"><center>
+      <ul id="hand">
+        <li class="card" style="margin-left: -25px;">
+            <b><font style="font-size: 20pt; color: black;">A<br>♠</font></b><br>
+        </li>
+        <li class="card" style="margin-left: -25px;">
+            <b><font style="font-size: 20pt; color: black;">8<br>♣</font></b><br>
+        </li>
+        <li class="card" style="margin-left: -25px;">
+            <b><font style="font-size: 20pt; color: red;">Q<br>♥</font></b><br>
+        </li>
+        <li class="card" style="margin-left: -25px;">
+            <b><font style="font-size: 20pt; color: red;">10<br>♦</font></b><br>
+        </li>
+        <li class="card" style="margin-left: -25px;">
+            <b><font style="font-size: 20pt; color: red;">K<br>♥</font></b><br>
+        </li>
+      </ul>
+    </center></div>
+  </body>
+</html>

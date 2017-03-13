@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin 0 auto;
+    padding 0;
+}
+
+ul {
+    margin 0;
+    padding 0;
+}
+
+table {
+    text-align: center;
+}
+
+.playingfield {
+    width: 100%;
+    float: top;
+    text-align: center;
+}
+
+.handfield {
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+
+    text-align: center;
+    
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+    border: solid;
+    border-width: 1px 0 0 0;
+    border-color: black;
+}
+
+.card {
+    float: left;
+    display: inline-block;
+    width: 60px;
+    height: 100px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 3px;
+    padding: 3px;
+    background-color: white;
+    text-align: left;
+}
+
+.blankcard {
+    border-style: dashed;
+    text-align: center;
+    padding: 50px 0 0 0;
+}
+
+.ccw_rotate {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.cw_rotate {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.ccw_right {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.cw_right {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.game_title {
+    height: 40px;
+    float: top;
+    border: solid;
+    border-width: 0 0 1px 0;
+    border-color: black;
+    padding-bottom: 10px;
+}
+
+.playersbar {
+    float: left;
+    min-width: 200px;
+}
+
+.mainblock {
+    float: left;
+    min-width: 334px;
+    padding: 30px 0 0 0;
+    border: solid;
+    border-width: 0 1px 0 1px;
+    border-color: black;
+    
+}
+
+.phaseblock {
+    padding: 10px;
+    text-align: right;
+    float: right;
+    
+}
+
+.playeritem {
+    display: block;
+    margin: 15 auto;
+    border-width: 1px;
+    border-bottom: solid;
+    
+}
+
+
+
+.pilecontainer {
+    margin: 5px 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.pilecard {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    padding: 3px 0 0 0;
+}
